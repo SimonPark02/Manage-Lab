@@ -5,6 +5,7 @@ LAB_PATH = "C:\\Users\\yjunp\\Desktop"
 LAB_FOLDERS = [
     'ref',
     'fig',
+    'dat',
     'template',
     'src',
     'paper'
