@@ -6,7 +6,6 @@ LAB_FOLDERS = [
     'ref',
     'fig',
     'dat',
-    'template',
     'src',
     'paper'
 ]
