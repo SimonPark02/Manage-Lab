@@ -19,3 +19,5 @@ if args.command == "mklab":
     mklab(args.Name)
 elif args.command == "rmlab":
     rmlab(args.Name)
+else:
+    parser.print_help()
