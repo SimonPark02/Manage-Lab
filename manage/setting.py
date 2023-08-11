@@ -1,5 +1,7 @@
+import os
+
 # @Default path
-LAB_PATH = "C:\\Users\\yjunp\\Desktop"
+LAB_PATH = os.path.join(os.path.expanduser('~'),'Desktop')
 
 # @Default setup
 LAB_FOLDERS = [
@@ -7,5 +9,4 @@ LAB_FOLDERS = [
     'fig',
     'dat',
     'src',
-    'paper'
 ]

@@ -1,14 +1,15 @@
 import os
 import sys
-from config import (LAB_PATH, LAB_FOLDERS)
+from setting import (LAB_PATH, LAB_FOLDERS)
 
 def mklab(name):
     for f in LAB_FOLDERS:
         try:
             os.makedirs(os.path.join(LAB_PATH, name, f))
-            print(f"/{name}/{f} Successfully created")
+            print(f"/{f} Successfully created in /{name}")
         except FileExistsError:
-            print(f"/{name}/{f} Already exists")
+            print(f"/{f} Already exists in /{name}")
+    print("May the force be with you ...")
 
 def rmlab(name):
     _ask(f"Do you really want to remove folder {name}? [y/n]: ")
@@ -18,7 +19,7 @@ def _ask(prompt):
     while True:
         print(prompt)
         res = input()
-        if  res == 'y':
+        if res == 'y':
             break
         elif res == 'n':
             sys.exit()
